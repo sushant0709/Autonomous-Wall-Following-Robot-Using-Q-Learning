@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch Gazebo with the Triton robot -->
+    <include file="$(find stingray_sim)/launch/wall_following.launch"/>
+
+    <!-- Launch the Q-learning training node -->
+    <node pkg="wall_following_rl" type="q_td_train.py" name="q_td_train" output="screen">
+        <!-- Parameters for training -->
+        <param name="epsilon" value="0.1" />
+        <param name="alpha" value="0.1" />
+        <param name="gamma" value="0.9" />
+        <param name="max_episodes" value="1000" />
+    </node>
+</launch>

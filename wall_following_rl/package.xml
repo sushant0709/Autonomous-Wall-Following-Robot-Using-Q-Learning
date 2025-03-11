@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>wall_following_rl</name>
+  <version>0.0.0</version>
+  <description>Robot wall following using Q-learning reinforcement learning</description>
+
+  <maintainer email="skhatta@ncsu.edu">sushant</maintainer>
+
+  <license>TODO</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>rospy</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>stingray_sim</build_depend>
+  <build_depend>rospkg</build_depend>
+
+  <!-- Run dependencies -->
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>stingray_sim</exec_depend>
+  <exec_depend>rospkg</exec_depend>
+  
+  <export>
+  </export>
+</package>

@@ -1,0 +1,8 @@
+<launch>
+    <!-- Launch Gazebo with the Triton robot -->
+    <include file="$(find stingray_sim)/launch/wall_following.launch"/>
+
+    <!-- Launch the Q-learning training node -->
+    <node pkg="wall_following_rl" type="q_td_run.py" name="q_td_run" output="screen">
+    </node>
+</launch>
